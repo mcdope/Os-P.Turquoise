@@ -1,0 +1,17 @@
+/* for some reason this wont work. fixed by enabling #panelLeft border-image in main css. */
+
+#panelApplications {
+    border-image: url("t-panel-b.png") 12 12 12 12;
+    -natural-hpadding: 18px;
+    -minimum-hpadding: 18px;
+}
+
+#panelApplications:hover {
+    border-image: url("t-panel-b-hover.png") 12 12 12 12;
+}
+
+#panelApplications:active,
+#panelApplications:focus,
+#panelApplications:overview {
+    border-image: url("t-panel-b-act.png") 12 12 12 12;
+}
