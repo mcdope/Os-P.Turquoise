@@ -1,0 +1,239 @@
+@define-color cluebar_color shade (mix (@bg_color, @base_color, 0.5), 0.95);
+
+NautilusWindow * {
+    -GtkPaned-handle-size: 0;
+}
+
+.nautilus-canvas-item {
+    border-radius: 0;
+}
+
+/* desktop mode */
+.nautilus-desktop.nautilus-canvas-item {
+    color: @bg_color;
+    text-shadow: 1px 1px alpha (#000, 0.8);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+    background-image: none;
+    background-color: alpha (@bg_color, 0.84);
+
+    color: @fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+    background-image: none;
+    background-color: alpha (@selected_bg_color, 0.84);
+
+    color: @selected_fg_color;
+    text-shadow: 0 1px alpha (@button_bg_color, 1.0);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+    text-shadow: none;
+}
+
+/* browser window */
+NautilusTrashBar.info,
+NautilusXContentBar.info,
+NautilusSearchBar.info,
+NautilusQueryEditor.info {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@cluebar_color, 1.02)),
+                                     to (shade (@cluebar_color, 0.98)));
+    background-color: @cluebar_color;
+    border-bottom-color: shade (@cluebar_color, 0.92);
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+
+    box-shadow: inset -1px 0px shade (@cluebar_color, 1.02),
+                inset 1px 0px shade (@cluebar_color, 1.02),
+                inset 0 1px shade (@cluebar_color, 1.04),
+                inset 0 -1px shade (@cluebar_color, 1.01);
+}
+
+NautilusTrashBar.info:backdrop,
+NautilusXContentBar.info:backdrop,
+NautilusSearchBar.info:backdrop,
+NautilusQueryEditor.info:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@cluebar_color, 1.01)),
+                                     to (shade (@cluebar_color, 0.99)));
+    background-color: @cluebar_color;
+    border-bottom-color: shade (@cluebar_color, 0.92);
+
+    box-shadow: inset -1px 0px shade (@cluebar_color, 1.01),
+                inset 1px 0px shade (@cluebar_color, 1.01),
+                inset 0 1px shade (@cluebar_color, 1.02),
+                inset 0 -1px shade (@cluebar_color, 1.0);
+}
+
+NautilusSearchBar .entry {
+}
+
+.nautilus-cluebar-label {
+    font: bold;
+    text-shadow: 0 1px shade (@cluebar_color, 1.06);
+}
+
+.nautilus-cluebar-label:backdrop {
+    color: mix (@fg_color, @bg_color, 0.3);
+    text-shadow: 0 1px shade (@bg_color, 1.0);
+}
+
+#nautilus-search-button *:active,
+#nautilus-search-button *:active:prelight {
+    color: @dark_fg_color;
+}
+
+NautilusFloatingBar {
+    background-color: @info_bg_color;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darker (@info_bg_color);
+}
+
+NautilusFloatingBar .button {
+    -GtkButton-image-spacing: 0;
+    -GtkButton-inner-border: 0;
+}
+
+/* sidebar */
+NautilusWindow .sidebar,
+NautilusWindow .sidebar .view {
+
+    color: @fg_color;
+    text-shadow: 0 1px shade (@base_color, 1.0);
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@base_color, 1.0)),
+                                                 to (shade (@base_color, 1.0)));
+}
+
+
+NautilusWindow .sidebar:backdrop,
+NautilusWindow .sidebar .view:backdrop {
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@base_color, 1.0)),
+                                                 to (shade (@base_color, 1.0)));
+}
+
+NautilusWindow .sidebar .frame {
+
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 0px 0px 0px 0px;
+
+    border-top-color: @dark_bg_color;
+    border-right-color: @dark_bg_color;
+    border-bottom-color: @dark_bg_color;
+    border-left-color: @dark_bg_color;
+}
+
+NautilusWindow .sidebar .frame:backdrop {
+
+    border-top-color: alpha (@dark_bg_color, 0.2);
+    border-right-color: alpha (@dark_bg_color, 0.2);
+    border-bottom-color: alpha (@dark_bg_color, 0.2);
+    border-left-color: alpha (@dark_bg_color, 0.2);
+}
+
+NautilusWindow .sidebar row:hover {
+
+    color: @dark_fg_color;
+}
+
+NautilusWindow .sidebar row:selected {
+
+    color: @selected_fg_color;
+    text-shadow: 0 1px alpha (@button_bg_color, 1.0);
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@selected_bg_color, 1.08)),
+                                                to (shade (@selected_bg_color, 1.02)));
+}
+
+NautilusWindow .sidebar row:selected:hover {
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@selected_bg_color, 1.02)),
+                                                to (shade (@selected_bg_color, 1.08)));
+}
+
+NautilusWindow .sidebar row:selected:backdrop {
+
+    color: mix (@fg_color, @bg_color, 0.3);
+    text-shadow: 0 1px shade (@bg_color, 1.0);
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.0)));
+}
+
+NautilusWindow .pane-separator {
+    background-color: @bg_color;
+    border-color: @bg_color;
+    border-style: solid;
+    border-width: 0;
+    box-shadow: none;
+}
+
+NautilusWindow .pane-separator:backdrop {
+    background-color: @bg_color;
+}
+
+NautilusWindow .ubuntu-online-accounts.frame,
+NautilusWindow .frame {
+    border-radius: 0;
+    border-style: solid;
+    padding: 0px 0px 0px 0px;
+    border-width: 0px;
+
+    border-top-color: alpha (@dark_bg_color, 0.3);
+    border-right-color: alpha (@dark_bg_color, 0.3);
+    border-bottom-color: alpha (@dark_bg_color, 0.3);
+    border-left-color: alpha (@dark_bg_color, 0.3);
+}
+
+NautilusWindow .ubuntu-online-accounts.frame:backdrop,
+NautilusWindow .frame:backdrop {
+
+    border-top-color: alpha (@dark_bg_color, 0.2);
+    border-right-color: alpha (@dark_bg_color, 0.2);
+    border-bottom-color: alpha (@dark_bg_color, 0.2);
+    border-left-color: alpha (@dark_bg_color, 0.2);
+}
+
+NautilusWindow .toolbar {
+    background-color: @button_bg_color;
+    padding: 6px 8px;
+}
+
+/* primary-toolbar */
+ NautilusWindow .primary-toolbar,
+ NautilusWindow .primary-toolbar .toolbar,
+ NautilusWindow .primary-toolbar.toolbar {
+
+    border-color: alpha (@dark_bg_color, 0.3);
+    background-color: @toolbar_bg_color;
+    border-radius:  0;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    -GtkWidget-window-dragging: true;
+    padding: 5px;
+}
+
+ NautilusWindow .primary-toolbar:backdrop,
+ NautilusWindow .primary-toolbar .toolbar:backdrop,
+ NautilusWindow .primary-toolbar.toolbar:backdrop {
+
+    border-color: alpha (@dark_bg_color, 0.2);
+    color: mix (@fg_color, @bg_color, 0.3);
+    text-shadow: 0 1px shade (@bg_color, 1.0);
+}

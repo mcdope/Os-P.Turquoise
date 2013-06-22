@@ -1,0 +1,1260 @@
+
+/* Os-P.Mist GTK > 3 Theme */
+
+/* Maintainer:   C.Robinson ( astral-1.deviantart.com )*/
+
+/* Contact: c.robynson@gmail.com */
+
+ /* Buttons */
+
+.button {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button {
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:backdrop {
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:hover {
+    border-image: url("assets/border-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:hover:backdrop {
+    border-image: url("assets/border-hover-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:focus {
+    border-image: url("assets/border-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:hover:focus {
+    border-image: url("assets/border-focused-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+}
+
+.button:insensitive {
+    border-image: url("assets/border-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:insensitive:backdrop {
+    border-image: url("assets/border-backdrop-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active {
+    border-image: url("assets/border-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:backdrop {
+    border-image: url("assets/border-active-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:hover {
+    border-image: url("assets/border-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:hover:backdrop {
+    border-image: url("assets/border-active-hover-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:focus {
+    border-image: url("assets/border-active-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:hover:focus {
+    border-image: url("assets/border-active-focused-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:insensitive {
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button:active:insensitive:backdrop {
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Button focused borders */
+
+.button:focus,
+.button.default {
+}
+
+.button.default {
+    border-image: url("assets/border-default.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button.default:hover {
+    border-image: url("assets/border-default-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button.default:focus {
+    border-image: url("assets/border-default-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.button.default:focus:hover {
+    border-image: url("assets/border-default-focused-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Button toolbars borders */
+
+.primary-toolbar .button {
+    border-image: url("assets/border-toolbar-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:focused {
+    border-image: url("assets/border-toolbar-button-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:active {
+    border-image: url("assets/border-toolbar-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:active:hover {
+    border-image: url("assets/border-toolbar-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:active:focused {
+    border-image: url("assets/border-toolbar-active-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:backdrop {
+    border-image: url("assets/border-backdrop-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:active:backdrop {
+    border-image: url("assets/border-backdrop-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Middle button */
+.linked .button,
+.primary-toolbar .linked .button,
+.primary-toolbar .button.raised.linked,
+.primary-toolbar .raised.linked .button,
+.toolbar .button.raised.linked,
+.toolbar .raised.linked .button {
+
+    border-image: url("assets/border-mid.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width:  1px 0 1px 1px;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button,
+.inline-toolbar.toolbar GtkToolButton .button {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:hover,
+.primary-toolbar .linked .button:hover,
+.primary-toolbar .button.raised.linked:hover,
+.primary-toolbar .raised.linked .button:hover,
+.toolbar .button.raised.linked:hover,
+.toolbar .raised.linked .button:hover {
+
+    border-image: url("assets/border-mid.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width:  1px 0 1px 1px;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:hover,
+.inline-toolbar.toolbar GtkToolButton .button:hover {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:active,
+.linked .button:focus:active,
+.primary-toolbar .linked .button:active,
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar .raised.linked .button:active,
+.primary-toolbar .button.raised.linked:focus:active,
+.primary-toolbar .raised.linked .button:hover,
+.primary-toolbar .raised.linked .button:focus:active,
+.toolbar .button.raised.linked:active,
+.toolbar .raised.linked .button:active {
+
+    border-image: url("assets/border-active-mid.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:hover,
+.inline-toolbar.toolbar .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton .button:active,
+.inline-toolbar.toolbar GtkToolButton .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton .button:active {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:active:hover,
+.toolbar .button.raised.linked:active:hover,
+.toolbar .raised.linked .button:active:hover,
+.primary-toolbar .linked .button:active:hover,
+.primary-toolbar .button.raised.linked:active:hover,
+.primary-toolbar .raised.linked .button:active:hover {
+
+    border-image: url("assets/border-active-hover-mid.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:focus,
+.toolbar .button.raised.linked:active:focus,
+.toolbar .raised.linked .button:active:focus,
+.primary-toolbar .button.raised.linked:focus,
+.primary-toolbar .raised.linked .button:focus {
+
+    border-image: url("assets/border-focused-mid.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:focus,
+.inline-toolbar.toolbar GtkToolButton .button:focus {
+
+    border-image: url("assets/border-focused-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.primary-toolbar .linked .button:backdrop,
+.primary-toolbar .button.raised.linked:backdrop,
+.primary-toolbar .raised.linked .button:backdrop,
+.inline-toolbar.toolbar .button:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:backdrop,
+.linked .button:backdrop,
+.toolbar .button.raised.linked:backdrop,
+.toolbar .raised.linked .button:backdrop {
+
+    border-image: url("assets/border-mid-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:backdrop {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:active:backdrop,
+.linked .button:focus:active:backdrop,
+.primary-toolbar .linked .button:active:backdrop,
+.primary-toolbar .linked .button:active:hover:backdrop,
+.primary-toolbar .button.raised.linked:active:backdrop,
+.primary-toolbar .raised.linked .button:active:backdrop,
+.toolbar .button.raised.linked:active:backdrop,
+.toolbar .raised.linked .button:active:backdrop {
+
+    border-image: url("assets/border-mid-backdrop.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:active:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:active:backdrop {
+
+    border-image: url("assets/border-right.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:insensitive,
+.primary-toolbar .linked .button:insensitive,
+.primary-toolbar .button.raised.linked:insensitive,
+.primary-toolbar .raised.linked .button:insensitive,
+.toolbar .button.raised.linked:insensitive,
+.toolbar .raised.linked .button:insensitive {
+
+    border-image: url("assets/border-mid-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:insensitive,
+.inline-toolbar.toolbar .button:backdrop:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:backdrop:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+
+    border-image: url("assets/border-right-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.linked .button:insensitive:backdrop,
+.primary-toolbar .linked .button:insensitive:backdrop,
+.primary-toolbar .button.raised.linked:insensitive:backdrop,
+.primary-toolbar .raised.linked .button:insensitive:backdrop,
+.toolbar .button.raised.linked:insensitive:backdrop,
+.toolbar .raised.linked .button:insensitive:backdrop {
+
+    border-image: url("assets/border-mid-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Middle button */
+.inline-toolbar.toolbar .button:insensitive:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive:backdrop {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .entry:first-child,
+.primary-toolbar .linked .entry:first-child {
+
+    border-image: url("assets/entry-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width:  1px 0 1px 1px;
+}
+
+/* Leftmost button */
+.linked .button:first-child,
+.primary-toolbar .linked .button:first-child,
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar .raised.linked .button:first-child,
+.toolbar .button.raised.linked:first-child,
+.toolbar .raised.linked .button:first-child,
+.inline-toolbar.toolbar .button:first-child,
+.inline-toolbar.toolbar GtkToolButton:first-child .button {
+
+    border-image: url("assets/border-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width:  1px 0 1px 1px;
+}
+
+/* Leftmost button */
+.linked .button:hover:first-child,
+.primary-toolbar .linked .button:hover:first-child,
+.toolbar .button.raised.linked:hover:first-child,
+.toolbar .raised.linked .button:hover:first-child {
+
+    border-image: url("assets/border-left.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .button:active:first-child,
+.linked .button:focus:active:first-child,
+.primary-toolbar .linked .button:active:first-child,
+.primary-toolbar .button.raised.linked:active:first-child,
+.primary-toolbar .raised.linked .button:active:first-child,
+.primary-toolbar .button.raised.linked:focus:active:first-child,
+.primary-toolbar .raised.linked .button:hover:first-child,
+.primary-toolbar .raised.linked .button:focus:active:first-child,
+.toolbar .button.raised.linked:active:first-child,
+.toolbar .raised.linked .button:active:first-child,
+.inline-toolbar.toolbar .button:active:first-child,
+.inline-toolbar.toolbar .button:hover:first-child,
+.inline-toolbar.toolbar .button:focus:active:first-child,
+.inline-toolbar.toolbar GtkToolButton .button:active:first-child,
+.inline-toolbar.toolbar GtkToolButton .button:focus:active:first-child,
+.inline-toolbar.toolbar GtkToolButton .button:active:first-child {
+
+    border-image: url("assets/border-active-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .button:active:hover:first-child,
+.toolbar .button.raised.linked:active:hover:first-child,
+.toolbar .raised.linked .button:active:hover:first-child,
+.primary-toolbar .linked .button:active:hover:first-child,
+.primary-toolbar .button.raised.linked:active:hover:first-child,
+.primary-toolbar .raised.linked .button:active:hover:first-child {
+
+    border-image: url("assets/border-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .button:focus:first-child
+.toolbar .button.raised.linked:active:focus:first-child,
+.toolbar .raised.linked .button:active:focus:first-child,
+.primary-toolbar .button.raised.linked:focus:first-child
+.primary-toolbar .raised.linked .button:focus:first-child
+.inline-toolbar.toolbar .button:focus:first-child
+.inline-toolbar.toolbar GtkToolButton .button:focus:first-child {
+
+    border-image: url("assets/border-focused-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .entry:first-child:backdrop,
+.primary-toolbar .linked .entry:first-child:backdrop {
+
+    border-image: url("assets/entry-left.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+/* Leftmost button */
+.primary-toolbar .button.raised.linked:insensitive:first-child,
+.primary-toolbar .button.raised.linked:backdrop:first-child,
+.primary-toolbar .raised.linked .button:insensitive:first-child,
+.primary-toolbar .raised.linked .button:backdrop:first-child,
+.inline-toolbar.toolbar .button:insensitive:first-child,
+.inline-toolbar.toolbar .button:backdrop:first-child,
+.inline-toolbar.toolbar .button:backdrop:insensitive:first-child,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:backdrop,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:backdrop:insensitive,
+.linked .button:first-child:backdrop,
+.linked .button:insensitive:first-child,
+.linked .button:insensitive:first-child:backdrop,
+.primary-toolbar .linked .button:first-child:backdrop,
+.primary-toolbar .button.raised.linked:first-child:backdrop,
+.primary-toolbar .raised.linked .button:first-child:backdrop,
+.primary-toolbar .linked .button:insensitive:first-child:backdrop,
+.toolbar .button.raised.linked:first-child:backdrop,
+.toolbar .raised.linked .button:first-child:backdrop,
+.inline-toolbar.toolbar .button:first-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:first-child:backdrop {
+
+    border-image: url("assets/border-left-backdrop.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Leftmost button */
+.linked .button:active:first-child:backdrop,
+.linked .button:focus:active:first-child:backdrop,
+.primary-toolbar .linked .button:hover:first-child:backdrop,
+.primary-toolbar .linked .button:active:first-child:backdrop,
+.primary-toolbar .linked .button:active:hover:first-child:backdrop,
+.primary-toolbar .button.raised.linked:active:first-child:backdrop,
+.primary-toolbar .raised.linked .button:active:first-child:backdrop,
+.toolbar .button.raised.linked:active:first-child:backdrop,
+.toolbar .raised.linked .button:active:first-child:backdrop,
+.inline-toolbar.toolbar .button:active:first-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:active:first-child:backdrop {
+
+    border-image: url("assets/border-left-backdrop.png")  10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .button:last-child,
+.primary-toolbar .linked .button:last-child,
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar .raised.linked .button:last-child,
+.toolbar .button.raised.linked:last-child,
+.toolbar .raised.linked .button:last-child,
+.inline-toolbar.toolbar .button:last-child,
+.inline-toolbar.toolbar GtkToolButton .button:last-child {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width: 1px;
+}
+
+/* Rightmost button */
+.linked .button:hover:last-child,
+.primary-toolbar .linked .button:hover:last-child,
+.primary-toolbar .raised.linked .button:hover:last-child,
+.toolbar .button.raised.linked:hover:last-child,
+.toolbar .raised.linked .button:hover:last-child {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .button:active:last-child,
+.linked .button:focus:active:last-child,
+.primary-toolbar .linked .button:active:last-child,
+.primary-toolbar .button.raised.linked:active:last-child,
+.primary-toolbar .raised.linked .button:active:last-child,
+.primary-toolbar .button.raised.linked:focus:active:last-child,
+.primary-toolbar .raised.linked .button:focus:active:last-child,
+.toolbar .button.raised.linked:active:last-child,
+.toolbar .raised.linked .button:active:last-child,
+.inline-toolbar.toolbar .button:active:last-child,
+.inline-toolbar.toolbar .button:hover:last-child,
+.inline-toolbar.toolbar .button:focus:active:last-child,
+.inline-toolbar.toolbar GtkToolButton .button:active:last-child,
+.inline-toolbar.toolbar GtkToolButton .button:focus:active:last-child,
+.inline-toolbar.toolbar GtkToolButton .button:active:last-child {
+
+    border-image: url("assets/border-active-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .button:active:hover:last-child,
+.toolbar .button.raised.linked:active:hover:last-child,
+.toolbar .raised.linked .button:active:hover:last-child,
+.primary-toolbar .linked .button:active:hover:last-child,
+.primary-toolbar .button.raised.linked:active:hover:last-child,
+.primary-toolbar .raised.linked .button:active:hover:last-child {
+
+    border-image: url("assets/border-active-hover-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .button:focus:last-child,
+.toolbar .button.raised.linked:active:focus:last-child,
+.toolbar .raised.linked .button:active:focus:last-child,
+.primary-toolbar .button.raised.linked:focus:last-child,
+.primary-toolbar .raised.linked .button:focus:last-child,
+.inline-toolbar.toolbar .button:focus:last-child,
+.inline-toolbar.toolbar GtkToolButton .button:focus:last-child {
+
+    border-image: url("assets/border-focused-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .entry:last-child:backdrop,
+.primary-toolbar .linked .entry:last-child:backdrop {
+
+    border-image: url("assets/entry_right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.linked .button:last-child:backdrop,
+.linked .button:insensitive:last-child:backdrop,
+.primary-toolbar .linked .button:last-child:backdrop,
+.primary-toolbar .button.raised.linked:first-child:last-child:backdrop,
+.primary-toolbar .raised.linked .button:first-child:last-child:backdrop,
+.primary-toolbar .linked .button:insensitive:last-child:backdrop,
+.toolbar .button.raised.linked:last-child:backdrop,
+.toolbar .raised.linked .button:last-child:backdrop,
+.inline-toolbar.toolbar .button:last-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:last-child:backdrop {
+
+    border-image: url("assets/border-right-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Rightmost button */
+.primary-toolbar .button.raised.linked:insensitive:last-child,
+.primary-toolbar .button.raised.linked:backdrop:last-child,
+.primary-toolbar .raised.linked .button:insensitive:last-child,
+.primary-toolbar .raised.linked .button:backdrop:last-child,
+.inline-toolbar.toolbar .button:insensitive:last-child,
+.inline-toolbar.toolbar .button:backdrop:last-child,
+.inline-toolbar.toolbar .button:backdrop:insensitive:last-child,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:backdrop,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:backdrop:insensitive,
+.linked .button:active:last-child:backdrop,
+.linked .button:focus:active:last-child:backdrop,
+.primary-toolbar .linked .button:hover:last-child:backdrop,
+.primary-toolbar .linked .button:active:last-child:backdrop,
+.primary-toolbar .linked .button:active:hover:last-child:backdrop,
+.primary-toolbar .button.raised.linked:active:last-child:backdrop,
+.primary-toolbar .raised.linked .button:active:last-child:backdrop,
+.toolbar .button.raised.linked:active:last-child:backdrop,
+.toolbar .raised.linked .button:active:last-child:backdrop,
+.inline-toolbar.toolbar .button:active:last-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:active:last-child:backdrop {
+
+    border-image: url("assets/border-right-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+/* Linked single button */
+.linked .entry:only-child,
+.primary-toolbar .linked .entry:only-child {
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-width: 1px;
+}
+
+/* Linked single button */
+.linked .button:only-child,
+.primary-toolbar.toolbar .button:only-child,
+.primary-toolbar.toolbar GtkToolButton:only-child .button,
+.primary-toolbar .linked .button:only-child,
+.primary-toolbar .button.raised.linked:only-child,
+.primary-toolbar .raised.linked .button:only-child,
+.toolbar .button.raised.linked:only-child,
+.toolbar .raised.linked .button:only-child,
+.inline-toolbar.toolbar .button:only-child,
+.inline-toolbar.toolbar GtkToolButton:only-child .button {
+
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-width: 1px;
+}
+
+/* Linked single button */
+.linked .button:active:only-child,
+.linked .button:focus:active:only-child,
+.primary-toolbar.toolbar .button:focus:active:only-child,
+.primary-toolbar.toolbar .button:active:only-child,
+.primary-toolbar .linked .button:active:only-child,
+.primary-toolbar .button.raised.linked:active:only-child,
+.primary-toolbar .raised.linked .button:active:only-child,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:active,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:focus:active,
+.toolbar .button.raised.linked:active:only-child,
+.toolbar .raised.linked .button:active:only-child,
+.inline-toolbar.toolbar .button:active:only-child,
+.inline-toolbar.toolbar GtkToolButton .button:active:only-child {
+
+    border-image: url("assets/border-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Linked single button */
+.toolbar .button.raised.linked:active:hover:only-child,
+.toolbar .raised.linked .button:active:hover:only-child,
+.linked .button:hover:only-child,
+.linked .button:active:hover:only-child,
+.primary-toolbar .linked .button:active:hover:only-child,
+.primary-toolbar .button.raised.linked:active:hover:only-child,
+.primary-toolbar .raised.linked .button:active:hover:only-child {
+
+    border-image: url("assets/border-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Linked single button */
+.linked .button:focus:only-child,
+.toolbar .button.raised.linked:active:focus:only-child,
+.toolbar .raised.linked .button:active:focus:only-child,
+.primary-toolbar.toolbar .button:focus:only-child,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:focus,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:focus {
+
+    border-image: url("assets/border-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Linked single button */
+.linked .entry:only-child:backdrop,
+.primary-toolbar .linked .entry:only-child:backdrop {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.linked .button:only-child:backdrop,
+.linked .button:insensitive:only-child:backdrop,
+.primary-toolbar .linked .button:only-child:backdrop,
+.primary-toolbar .button.raised.linked:only-child:backdrop,
+.primary-toolbar .raised.linked .button:only-child:backdrop,
+.primary-toolbar .linked .button:insensitive:only-child:backdrop,
+.toolbar .button.raised.linked:only-child:backdrop,
+.toolbar .raised.linked .button:only-child:backdrop,
+.inline-toolbar.toolbar .button:only-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:only-child:backdrop {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Linked single button */
+.linked .button:active:only-child:backdrop,
+.linked .button:focus:active:only-child:backdrop,
+.primary-toolbar .linked .button:hover:only-child:backdrop,
+.primary-toolbar .linked .button:active:only-child:backdrop,
+.primary-toolbar .linked .button:active:hover:only-child:backdrop,
+.primary-toolbar .button.raised.linked:active:only-child:backdrop,
+.primary-toolbar .raised.linked .button:active:only-child:backdrop,
+.toolbar .button.raised.linked:active:first-child:only-child:backdrop,
+.toolbar .raised.linked .button:active:first-child:only-child:backdrop,
+.inline-toolbar.toolbar .button:active:first-child:only-child:backdrop,
+.inline-toolbar.toolbar GtkToolButton .button:active:only-child:backdrop,
+.primary-toolbar.toolbar .button:insensitive:only-child,
+.primary-toolbar.toolbar .button:backdrop:only-child,
+.primary-toolbar.toolbar .button:backdrop:insensitive:only-child,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:insensitive,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:backdrop,
+.primary-toolbar.toolbar GtkToolButton:only-child .button:backdrop:insensitive,
+.inline-toolbar.toolbar .button:insensitive:only-child,
+.inline-toolbar.toolbar .button:backdrop:only-child,
+.inline-toolbar.toolbar .button:backdrop:insensitive:only-child,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:backdrop,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:backdrop:insensitive {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* Cell and row */
+
+row:selected {
+    
+    border-image: url("assets/row-slected.png") 12 13 12 13 / 12px 13px 12px 13px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+row:selected:backdrop {
+
+    border-image: url("assets/slected-backdrop.png") 12 13 12 13 / 12px 13px 12px 13px stretch;
+}
+
+/* Combobox entry */
+
+GtkComboBox.combobox-entry .entry:first-child,
+GtkComboBox.combobox-entry .button:first-child {
+
+    border-image: url("assets/entry-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+    border-width: 1px 0 1px 1px;
+}
+
+GtkComboBox.combobox-entry .entry:last-child,
+GtkComboBox.combobox-entry .button:last-child {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+    border-width: 1px;
+}
+
+GtkComboBox.combobox-entry .button {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width: 1px;
+}
+
+GtkComboBox.combobox-entry .button:backdrop {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+GtkComboBox.combobox-entry .button:focus {
+    border-image: url("assets/combobox-button-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+}
+
+GtkComboBox.combobox-entry .button:insensitive {
+    border-image: url("assets/border-right-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+GtkComboBox.combobox-entry .button:insensitive:backdrop {
+    border-image: url("assets/border-right-backdrop.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+}
+
+GtkComboBox.combobox-entry .button:active:focus {
+    border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:first-child {
+
+    border-image: url("assets/entry-left.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+    border-width: 1px 0 1px 1px;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:last-child {
+
+    border-image: url("assets/border-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+    border-width: 1px;
+}
+
+/*Column-header */
+
+column-header .button {
+
+    border-image: url("assets/col_head.png") 0 12 10 0 / 0px 12px 10px 0px stretch;
+    
+    border-width: 0px 1px 1px 0px;
+}
+
+column-header .button:backdrop {
+
+    border-image: url("assets/col_head.png") 0 12 10 0 / 0px 12px 10px 0px stretch;
+}
+
+column-header .button:hover {
+
+    border-image: url("assets/col_head.png") 0 12 10 0 / 0px 12px 10px 0px stretch;
+}
+
+column-header .button:hover:backdrop {
+
+    border-image: url("assets/col_head.png") 0 12 10 0 / 0px 12px 10px 0px stretch;
+}
+
+
+column-header:nth-child(last) .button {
+
+    
+    border-width: 0px 0px 1px 0px;
+}
+
+/* Entry */
+
+.entry {
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.entry {
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:backdrop {
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:focused {
+    border-image: url("assets/entry-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:selected,
+.entry:selected:focused {
+    border-image: url("assets/entry-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:insensitive {
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:insensitive:backdrop {
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.menuitem .entry {
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry {
+    border-image: url("assets/entry-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry:focus {
+    border-image: url("assets/entry-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry.progressbar,
+.primary-toolbar .entry.progressbar,
+.entry.progressbar {
+
+    border-image: url("assets/bar-hrz-act.png") 5 12 5 12 / 5px 12px 5px 12px stretch;
+
+    border-width: 0;
+}
+
+/* Iconview */
+
+GtkIconView.view.cell:selected,
+GtkIconView.view.cell:selected:focused {
+
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+GtkIconView.content-view.check {
+    /*background-image: url("assets/grid-selection-unchecked.svg");*/
+}
+
+GtkIconView.content-view.check:active {
+    /*background-image: url("assets/grid-selection-checked.svg");*/
+}
+
+/* inline-toolbar */
+.inline-toolbar.toolbar {
+
+    border-image: url("assets/inline-toolbar.png") 1 10 8 10 / 1px 10px 8px 10px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+}
+
+.inline-toolbar.toolbar .button *:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+}
+
+.inline-toolbar.toolbar GtkToolButton .button:insensitive {
+
+    border-image: url("assets/border-backdrop.png") 10 1 10 12 / 10px 1px 10px 12px stretch;
+}
+
+/* menu */
+
+.menu,
+GtkTreeMenu.menu,
+.toolbar .primary-toolbar .menu,
+GtkMenuToolButton.menu,
+.primary-toolbar .button .menu {
+
+    border-image: url("assets/menu.png") 5 10 5 10 / 5px 10px 5px 10px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* menubar */
+
+.menubar {
+
+    border-image: url("assets/menubar.png") 2 10 8 10 / 2px 10px 8px 10px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+
+    border-image: url("assets/menubaritem.png") 5 10 5 10 / 5px 10px 5px 10px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.menuitem:hover,
+.menu .menuitem:hover {
+
+    border-image: url("assets/menuitem.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* notebook */
+
+.notebook {
+
+    border-color: alpha (@dark_bg_color, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.notebook tab {
+
+    border-image: url("assets/notebook-tab.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
+
+    border-width: 1px 1px 0px 1px;
+}
+
+.notebook tab.right:active {
+
+    border-image: url("assets/border-right.png") 10 8 10 1 / 10px 8px 10px 1px stretch;
+}
+
+.notebook tab.bottom:active {
+
+    border-image: url("assets/inline-toolbar.png") 1 10 8 10 / 1px 10px 8px 10px stretch;
+}
+
+.notebook tab.left:active {
+
+    border-image: url("assets/border-left.png") 10 1 10 8 / 10px 1px 10px 8px stretch;
+}
+
+/* progressbar and scale */
+
+GtkProgressBar {
+
+    border-width: 0px;
+}
+
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+
+    border-image: url("assets/bar-hrz-act.png") 5 12 5 12 / 5px 12px 5px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.progressbar:backdrop,
+.progressbar row:backdrop,
+.progressbar row:hover:backdrop,
+.progressbar row:selected:backdrop,
+.progressbar row:selected:focused:backdrop,
+.progressbar.vertical:backdrop {
+
+    border-image: url("assets/bar-hrz-act.png") 5 12 5 12 / 5px 12px 5px 12px stretch;
+}
+
+/* Scale */
+
+.menubar .menuitem .scale.highlight.left,
+.scale.highlight.left {
+
+    border-image: url("assets/bar-hrz-act.png") 5 12 5 12 / 5px 12px 5px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.scale.highlight.bottom:backdrop{
+
+    border-image: url("assets/trough.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/*Trough */
+
+.trough,
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focused {
+
+    border-image: url("assets/trough.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.trough.vertical {
+
+    border-image: url("assets/trough-vert.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.scale.trough {
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    margin: 7px 0 6px 0;
+}
+
+.scrollbar.trough {
+    border-width: 0px;
+}
+
+.scrollbar.trough.vertical {
+
+    border-image: url("assets/trough-vert.png") 12 7 12 7 / 12px 7px 12px 7px stretch;
+}
+
+.scrollbar.trough.horizontal {
+    border-image: url("assets/trough.png") 7 12 7 12 / 7px 12px 7px 12px stretch;
+}
+
+GtkSwitch.trough {
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+GtkSwitch.trough:active {
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* XXX temporary */
+GtkSwitch.trough:backdrop,
+GtkSwitch.trough:insensitive {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar GtkScale.trough,
+.primary-toolbar GtkScale.trough:backdrop,
+.menuitem GtkScale.trough {
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* scrollbar */
+
+.scrollbar.slider {
+    border-image: url("assets/bar-scroll.png") 12 7 12 7 / 12px 7px 12px 7px stretch;
+}
+
+.scrollbar.slider.vertical:hover {
+    border-image: url("assets/bar-scroll-hover.png") 12 7 12 7 / 12px 7px 12px 7px stretch;
+}
+
+.scrollbar.slider.vertical:active {
+    border-image: url("assets/bar-scroll-active.png") 12 7 12 7 / 12px 7px 12px 7px stretch;
+}
+
+.scrollbar.slider.horizontal {
+
+    border-image: url("assets/bar-scroll-hrz.png") 7 12 7 12 / 7px 12px 7px 12px stretch;
+}
+
+.scrollbar.slider.horizontal:hover{
+    border-image: url("assets/bar-scroll-hover-hrz.png") 7 12 7 12 / 7px 12px 7px 12px stretch;
+}
+
+.scrollbar.slider.horizontal:active {
+    border-image: url("assets/bar-scroll-active-hrz.png") 7 12 7 12 / 7px 12px 7px 12px stretch;
+}
+
+/* scrolled window */
+
+.ubuntu-online-accounts.frame,
+GtkScrolledWindow.frame {
+    border-color: @border_color;
+    border-style: solid;
+    padding: 0px;
+}
+
+.ubuntu-online-accounts.frame:backdrop,
+GtkScrolledWindow.frame:backdrop {
+    border-color: @border_color;
+}
+
+.ubuntu-online-accounts.frame {
+}
+
+/* sidebar */
+
+.sidebar row:selected {
+    
+    border-image: url("assets/row-slected.png") 12 13 12 13 / 12px 13px 12px 13px stretch;
+
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+.sidebar row:selected:backdrop {
+
+    border-image: url("assets/slected-backdrop.png") 12 13 12 13 / 12px 13px 12px 13px stretch;
+}
+
+.sidebar .frame {
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-top-color: alpha (@dark_bg_color, 0.5);
+    border-right-color: alpha (@dark_bg_color, 0.5);
+    border-bottom-color: alpha (@dark_bg_color, 0.5);
+    border-left-color: alpha (@dark_bg_color, 0.5);
+}
+
+/* spinbutton */
+
+.spinbutton.button,
+.notebook .spinbutton.button {
+
+    border-image: url("assets/spin-left.png") 5 0 10 10 / 5px 0px 10px 10px stretch;
+
+    border-width: 1px 0px 1px 1px;
+}
+
+.spinbutton.button:backdrop,
+.notebook .spinbutton.button:backdrop {
+
+    border-image: url("assets/spin-left.png") 5 0 10 10 / 5px 0px 10px 10px stretch;
+}
+
+.spinbutton.button:nth-child(last),
+.notebook .spinbutton.button:nth-child(last) {
+
+    border-image: url("assets/spin-right.png") 10 5 10 5 / 10px 5px 10px 5px stretch;
+
+    border-width: 1px;
+}
+
+.spinbutton{
+
+    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-width: 0px;
+}
+
+/* switch */
+
+GtkSwitch {
+
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+GtkSwitch.slider {
+
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+GtkSwitch.slider:active {
+
+    border-image: url("assets/border.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+GtkSwitch.slider:backdrop {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+GtkSwitch.slider:insensitive {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+/* primary-toolbar */
+
+.primary-toolbar,
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar {
+
+    border-image: url("assets/primary-toolbar.png") 4 12 4 12 / 4px 12px 4px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+}
+
+.primary-toolbar .button *:focus,
+.primary-toolbar .raised .button:focus,
+.primary-toolbar .raised.button:focus,
+.primary-toolbar .button:hover:focus,
+.primary-toolbar .button:focus,
+.primary-toolbar .button:active:focus,
+.primary-toolbar .button:insensitive:focus {
+
+    border-image: url("assets/border-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .button:active:insensitive,
+.primary-toolbar .button:insensitive {
+
+    border-image: url("assets/border-backdrop.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry {
+
+    border-image: url("assets/primary-toolbar-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry:backdrop {
+
+    border-image: url("assets/primary-toolbar-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry:insensitive {
+
+    border-image: url("assets/primary-toolbar-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry:active,
+.primary-toolbar .entry:hover,
+.primary-toolbar .entry:focused {
+
+    border-image: url("assets/primary-toolbar-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width:  1px;
+}
+
+/* tooltip */
+
+.tooltip {
+
+    border-image: url("assets/tooltip.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px 1px 1px 1px;
+}
+
+/* treeview */
+
+GtkTreeView.dnd {
+
+    border-color: alpha (@dark_bg_color, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+

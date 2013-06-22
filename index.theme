@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Os-P.Turquoise
+Comment=Os-P.Turquoise_Suite  theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Os-P.Turquoise
+MetacityTheme=Os-P.Turquoise
+IconTheme=Faenza-Desat
+CursorTheme=Adwaita
+ButtonLayout=minimize,maximize,close:

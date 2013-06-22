@@ -1,0 +1,39 @@
+#Conky_Panacea-Bar#
+
+alignment bottom_left
+border_margin 1
+border_width 2
+color2 1994D1
+color3 999999
+cpu_avg_samples 2
+default_color 373737
+default_outline_color 3c3c3c
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+gap_x 6
+gap_y 4
+minimum_size 1280
+maximum_width 1600
+net_avg_samples 2
+no_buffers yes
+own_window yes
+own_window_transparent no
+own_window_type panel
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+own_window_colour EDF2F8
+override_utf8_locale yes
+stippled_borders 0
+text_buffer_size 2048
+total_run_times 0
+update_interval 1
+uppercase no
+use_xft yes
+use_spacer_right
+xftfont Liberation Sans:pixelsize=11
+xftalpha 0.8
+
+TEXT
+${color2} FREQ: ${color}${freq_g cpu0}Ghz     ${color2}CPU1:${color} ${cpu cpu1}% ${goto 170}${cpugraph cpu1 12,60 5BB0CC 5BB0CC}      ${color2}CPU2:${color} ${cpu cpu2}% ${goto 315}${cpugraph cpu2 12,60 5BB0CC 5BB0CC}      ${color3}|     ${color2}C1: ${color}${hwmon temp 2}°C${color4}  ${color2}C2: ${color}${hwmon temp 1}°C  ${color2}MB: ${color}${hwmon temp 3}°C     ${color3}|     ${color2}FAN: ${color}${hwmon fan 2} RPM     ${color3}|     ${color2}MEM:${color} ${mem} ${color2}/ ${color}${memmax}     ${color3}|     ${color2}DN:${color} ${downspeedf eth0}KB/s ${goto 915}${downspeedgraph eth0 12,60 5BB0CC 5BB0CC}      ${color2}UP:${color} ${upspeedf eth0}KB/s ${goto 1065}${upspeedgraph eth0 12,60 5BB0CC 5BB0CC}     ${color3}|    ${color2}SDA:${color} ${fs_used /} ${color2}/ ${color}${fs_size /} 

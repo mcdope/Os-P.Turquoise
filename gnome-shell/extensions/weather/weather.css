@@ -1,0 +1,67 @@
+/* taken from gnome-shell.css, .dash-search-button */
+.weather-current-location-link:selected,
+.weather-current-location-link{
+    border-image: url("inset-panel-light.png") 12 12 12 12;
+    border: 1px solid rgba(0,0,0,0);
+    padding:4px 6px 5px 6px;
+}
+
+.weather-current-location-link:hover {
+    border-image: url("hover.png") 6 6 6 6;
+    color: rgba(255,255,255,0.9);
+}
+
+.weather-current-summarybox {
+    padding-top: 15px;
+}
+
+.weather-current-summary {
+    font-size: 20px;
+}
+
+.weather-current-databox {
+    padding: 15px 15px 0 15px;
+}
+
+.weather-current-icon {
+    padding: 0 15px 0 15px;
+}
+
+.weather-current-iconbox {
+    padding: 0px 0px 10px 0px;
+}
+
+.weather-icon {
+    padding-right: 5px;
+}
+
+.weather-icon-rtl {
+    padding-left: 5px;
+}
+
+.weather-current-databox-captions {
+    text-align: right;
+    padding-right: 5px;
+    color: rgba(82,79,72,0.5);
+}
+
+.weather-current-astronomy {
+    color: rgba(82,79,72,0.5);
+}
+
+.weather-forecast-icon {
+  padding: 10px 15px 5px 15px;
+}
+
+.weather-forecast-databox {
+  padding: 15px 15px 5px 0;
+}
+
+.weather-forecast-day {
+  color: rgba(82,79,72,0.5);
+  font-size: 90%;
+}
+
+.weather-config {
+  padding-right: 10px;
+}

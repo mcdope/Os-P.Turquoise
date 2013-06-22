@@ -1,0 +1,153 @@
+.workspacestodock-workspace-caption-container {
+    padding: 1px;
+}
+.workspacestodock-workspace-caption-background {
+    border-image: url("app.png") 8 8 8 8;
+}
+.workspacestodock-workspace-caption {
+}
+
+/* caption window apps (taskbar) */
+.workspacestodock-caption-windowapps {
+    padding: 0px;
+}
+.workspacestodock-caption-windowapps-menu {
+    -boxpointer-gap: 12px;
+}
+.workspacestodock-caption-windowapps-menu-item {
+    /*fallback class for GS34 since it can't override gnome shell class 'popup-menu-item' */
+    padding: 0px;
+}
+.workspacestodock-caption-windowapps-menu-item:active {
+    /*fallback class for GS34 since it can't override gnome shell class 'popup-menu-item' */
+}
+.workspacestodock-caption-windowapps-menu-icon {
+    padding: 0px 5px;
+}
+.workspacestodock-caption-windowapps-menu-label {
+    padding: 0px;
+}
+.workspacestodock-caption-windowapps-menu .window-close {
+    /* GS36+ can override gnome shell class 'window-close' */
+    background-image: url("close-window.svg");
+    background-size: 16px;
+    height: 26px;
+    width: 26px;
+}
+.workspacestodock-caption-windowapps-menu-close {
+    /*fallback class for GS34 since it can't override gnome shell class 'window-close' */
+}
+.workspacestodock-caption-windowapps-menu-close:hover {
+    /*fallback class for GS34 since it can't override gnome shell class 'window-close' */
+    border-image: url("caption.png") 8 8 8 8;
+}
+.workspacestodock-caption-windowapps-button {
+    padding: 2px 4px 2px 4px;
+    /*border-image: url("app-running.png") 8 8 8 8;*/
+}
+.workspacestodock-caption-windowapps-button:hover {
+    border-image: url("app.png") 8 8 8 8;
+}
+.workspacestodock-caption-windowapps-button:active {
+    border-image: url("app.png") 8 8 8 8;
+}
+.workspacestodock-caption-windowapps-button:active:hover {
+    border-image: url("app.png") 8 8 8 8;
+}
+.workspacestodock-caption-windowapps-button-icon {
+    padding: 0px;
+}
+.workspacestodock-caption-windowapps-button:hover > .workspacestodock-caption-windowapps-button-icon {
+}
+.workspacestodock-caption-windowapps-button:active > .workspacestodock-caption-windowapps-button-icon {
+}
+
+/* caption workspace number */
+
+.workspacestodock-caption-number {
+    color: rgba(0,0,0,0.5);
+    border-image: url("inactive-number.png") 8 8 8 8;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 8px;
+}
+
+/* caption workspace name */
+
+.workspacestodock-caption-name {
+    color: rgba(150,150,150,0.8);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+/* caption workspace windowcount */
+
+.workspacestodock-caption-windowcount {
+    min-width: 7px;
+    color: rgba(150,150,150,0.8);
+    background-color: rgba(10,10,10,0.2);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+/* caption workspace windowcount image*/
+
+.workspacestodock-caption-windowcount-image {
+    width: 20px;
+    height: 16px;
+}
+
+/* The classes below are used in conjunction with the above workspacestodock-caption-windowcount-image 
+ * They provide background images that corespond with the window count */
+
+.workspacestodock-caption-windowcount-image-1 {
+    background-image: url('h-one.svg');
+}
+
+.workspacestodock-caption-windowcount-image-2 {
+    background-image: url('h-two.svg');
+}
+
+.workspacestodock-caption-windowcount-image-3 {
+    background-image: url('h-three.svg');
+}
+
+.workspacestodock-caption-windowcount-image-4 {
+    background-image: url('h-four.svg');
+}
+
+/* caption spacer-filler */
+
+.workspacestodock-caption-spacer {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    width: 1px;
+}
+
+/* The classes below are used in conjuction with the above classes
+ * They provide additional theming for the current workspace caption */
+
+.workspacestodock-workspace-caption-background-current {
+    border-image: url("caption.png") 8 8 8 8;
+}
+
+.workspacestodock-caption-number-current {
+    border-image: url("number.png") 8 8 8 8;
+    color: rgba(255,255,255,0.8);
+}
+
+.workspacestodock-caption-name-current {
+    color: rgba(255,255,255,0.8);
+}
+
+.workspacestodock-caption-windowcount-current {
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(10,10,10,0.4);
+}
+
+.workspacestodock-caption-windowcount-image-current {
+}

@@ -1,0 +1,64 @@
+/* Add Dash to Dock Support */
+
+/* Shrink the dash by reducing padding and border radius */
+#dashtodockContainer #dash {
+    padding:0px;
+
+}
+
+#dashtodockContainer .app-well-app {
+    transition-duration: 250;
+    background-size: contain;
+}
+
+#dashtodockContainer .app-well-app {
+   padding: 0px;
+}
+
+/* Dash height extended to the whole available vertical space */
+#dashtodockContainer.extended #dash {
+    border:0;
+    border-radius: 0;
+}
+
+/* Running and focused application style */
+
+#dashtodockContainer .app-well-app.running > .overview-icon {
+	background-image:none;
+}
+
+#dashtodockContainer .app-well-app.focused > .overview-icon {
+}
+
+#dashtodockContainer:ltr .running1 {
+    background-image: url('one.png');
+}
+
+#dashtodockContainer:rtl .running1 {
+    background-image: url('one.png');
+}
+
+#dashtodockContainer:ltr .running2 {
+    background-image: url('two.png');
+}
+
+#dashtodockContainer:rtl .running2 {
+    background-image: url('two.png');
+}
+
+#dashtodockContainer:ltr .running3 {
+   background-image: url('three.png');
+}
+
+#dashtodockContainer:rtl .running3 {
+    background-image: url('three.png');
+}
+
+#dashtodockContainer:ltr .running4 {
+    background-image: url('four.png');
+}
+
+#dashtodockContainer:rtl .running4 {
+    background-image: url('four.png');
+}
+

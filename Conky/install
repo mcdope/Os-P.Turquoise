@@ -1,0 +1,15 @@
+
+1. Install LM-Sensors
+
+These sensors are a requirement in order to have Conky installed properly.
+
+    A. From the terminal, enter the following: sudo apt-get install lm-sensors
+    B. Configure the sensors by entering the following: sudo sensors-detect
+    C. Reply "yes" to all of the questions.
+    D. Test what is being detected by entering "sensors." This will display all detected sensor devices.
+
+2. Installing and Running Conky
+
+    A. From the terminal, enter the following: sudo apt-get install conky
+    B.  Copy file ( .conky ) in folder Panacea-Bar to you're home directory. 
+    C. To start Conky. Press <ALT> + <F2> and enter ( conky ).
