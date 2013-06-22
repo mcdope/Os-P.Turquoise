@@ -268,11 +268,11 @@ StScrollBar StButton#vhandle:active {
 }
 
 .toggle-switch-intl {
-    background-image: url("toggle-off-intl.svg");
+    background-image: url("toggle-off-intl.png");
     background-size: contain;
 }
 .toggle-switch-intl:checked {
-    background-image: url("toggle-on-intl.svg");
+    background-image: url("toggle-on-intl.png");
     background-size: contain;
 }
 
