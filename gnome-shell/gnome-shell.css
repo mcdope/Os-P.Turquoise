@@ -518,7 +518,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #panelLeft { 
-    /*border-image: url("t-panel-b.png") 12 12 12 12;*/
+    border-image: url("t-panel-b.png") 12 12 12 12;
 }
 
 #panelCenter { 
@@ -534,6 +534,10 @@ StScrollBar StButton#vhandle:active {
     text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
     spinner-image: url("process-working.svg");
     spacing: 4px;
+}
+
+#appMenu StLabel {
+	padding-left: 24px;
 }
 
 /* used for the app menu header only */
