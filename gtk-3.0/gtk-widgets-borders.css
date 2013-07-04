@@ -80,8 +80,9 @@
 
 /* Button focused borders */
 
-.button:focus,
 .button.default {
+    border-width: 1px;
+    padding: 3px 6px 4px 6px;
 }
 
 .button.default {
@@ -100,6 +101,10 @@
     border-image: url("assets/border-default-focused-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+.button.default:hover:active {
+    border-image: url("assets/border-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
 /* Button toolbars borders */
 
 .primary-toolbar .button {
@@ -110,12 +115,9 @@
     border-image: url("assets/border-toolbar-button-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+.toolbar .button:active,
 .primary-toolbar .button:active {
     border-image: url("assets/border-toolbar-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
-
-.primary-toolbar .button:active:hover {
-    border-image: url("assets/border-toolbar-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar .button:active:focused {
@@ -862,13 +864,23 @@ GtkIconView.content-view.check:active {
 
 /* menu */
 
-.menu,
-GtkTreeMenu.menu,
 .toolbar .primary-toolbar .menu,
-GtkMenuToolButton.menu,
 .primary-toolbar .button .menu {
 
-    border-image: url("assets/menu.png") 5 10 5 10 / 5px 10px 5px 10px stretch;
+    border-image: url("assets/primary-toolbar-menu.png") 5 10 5 10 / 5px 10px 5px 10px stretch;
+
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px 1px 1px 1px;
+}
+
+.menu,
+.toolbar .menu
+GtkTreeMenu.menu,
+GtkComboBox .menu,
+GtkMenuToolButton.menu {
+
+    border-image: url("assets/menu-menubar.png") 5 10 5 10 / 5px 10px 5px 10px stretch;
 
     border-color: transparent;
     border-style: solid;
@@ -1015,11 +1027,11 @@ GtkProgressBar {
 
 .scrollbar.trough.vertical {
 
-    border-image: url("assets/trough-vert.png") 12 7 12 7 / 12px 7px 12px 7px stretch;
+    border-image: url("assets/trough-vert.png") 7 7 7 7 / 7px 7px 7px 7px stretch;
 }
 
 .scrollbar.trough.horizontal {
-    border-image: url("assets/trough.png") 7 12 7 12 / 7px 12px 7px 12px stretch;
+    border-image: url("assets/trough.png") 7 7 7 7 / 7px 7px 7px 7px stretch;
 }
 
 GtkSwitch.trough {
@@ -1203,7 +1215,7 @@ GtkSwitch.slider:insensitive {
 .primary-toolbar .button:active:focus,
 .primary-toolbar .button:insensitive:focus {
 
-    border-image: url("assets/border-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: url("assets/border-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar .button:active:insensitive,

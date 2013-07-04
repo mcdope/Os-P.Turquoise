@@ -212,7 +212,7 @@ NautilusWindow .frame:backdrop {
 
 NautilusWindow .toolbar {
     background-color: @button_bg_color;
-    padding: 6px 8px;
+    padding: 3px 2px 2px 2px;
 }
 
 /* primary-toolbar */
@@ -226,7 +226,7 @@ NautilusWindow .toolbar {
     border-style: solid;
     border-width: 0px 1px 1px 0px;
     -GtkWidget-window-dragging: true;
-    padding: 5px;
+    padding: 3px 2px 2px 2px;
 }
 
  NautilusWindow .primary-toolbar:backdrop,

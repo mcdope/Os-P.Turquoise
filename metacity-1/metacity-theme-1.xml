@@ -2,10 +2,10 @@
 
 <metacity_theme>
 <info>
-  	<name>Os-P.Turquiose  Metacity Theme</name>
-  	<author>Astral-1</author>
-  	<copyright>GPL</copyright>
-  	<date>Wednesday 20-3-2013 </date>
+  	<name> Os-P.Turquoise  Metacity Theme </name>
+  	<author> The ~ Panacea ~ Project </author>
+  	<copyright> GPL </copyright>
+  	<date> Wednesday 20-3-2013 </date>
   	<description>Metacity theme</description>
 </info>
 
@@ -17,10 +17,10 @@
 	<distance name="left_titlebar_edge" value="4"/>
 	<distance name="right_titlebar_edge" value="4"/>
 	<distance name="button_width" value="38"/>
-	<distance name="button_height" value="34"/>
+	<distance name="button_height" value="30"/>
 	<distance name="title_vertical_pad" value="0"/>
-	<border name="title_border" left="0" right="0" top="4" bottom="0"/>
-	<border name="button_border" left="0" right="0" top="2" bottom="0"/>
+	<border name="title_border" left="0" right="0" top="3" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="0" bottom="2"/>
 </frame_geometry>
 
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -29,11 +29,11 @@
 	<distance name="bottom_height" value="4"/>
 	<distance name="left_titlebar_edge" value="4"/>
   	<distance name="right_titlebar_edge" value="4"/>
-  	<distance name="button_width" value="32"/>
-  	<distance name="button_height" value="32"/>
-  	<distance name="title_vertical_pad" value="10"/>
-  	<border name="title_border" left="0" right="0" top="4" bottom="0"/>
- 	<border name="button_border" left="0" right="0" top="4" bottom="0"/>
+  	<distance name="button_width" value="38"/>
+  	<distance name="button_height" value="30"/>
+  	<distance name="title_vertical_pad" value="0"/>
+  	<border name="title_border" left="0" right="0" top="3" bottom="0"/>
+ 	<border name="button_border" left="0" right="0" top="0" bottom="2"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false"

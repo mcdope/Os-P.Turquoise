@@ -1,45 +1,28 @@
-/* ---------------------------------------------------------------------*/
-/* New classes still playing with */
-/* ---------------------------------------------------------------------*/
-.gnomenu-thumbnails-background {
-    /*border: 1px solid rgba(128, 128, 128, 0.4);
-    border-right: 0px;
-    border-bottom: 0px;
-    border-top: 0px;*/
-    /*border-radius: 9px 0px 0px 9px;*/
-    /*background-color: rgba(0, 0, 0, 0.5);*/
-    padding: 5px 14px 5px 10px;
-}
-
-/* not implemented yet */
-.gnomenu-thumbnail-indicator {
-    border: 4px solid rgba(255,255,255,0.7);
-    padding: 1px;
-}
-/* ---------------------------------------------------------------------*/
-
 .gnomenu-panel-box {
-         border-image: url("t-panel-b.png") 12 12 12 12;
+     border-image: url("t-panel-b.png") 12 12 12 12;
 }
 
 .gnomenu-panel-button {
-         margin: 0px;
-         padding: 0px 16px;
+    margin: 0px;
+    padding: 0px 16px;
 }
 
 .gnomenu-panel-menu-button {
-         margin: 0px;
-         padding: 0px 16px;
+    margin: 0px;
+    padding: 0px 16px;
 }
 
 .gnomenu-panel-menu-button:hover {
+}
+
+.gnomenu-panel-menu-button:active {
 }
 
 .gnomenu-main-menu-box {
 }
 
 .gnomenu-menu-top-pane {
-    padding: 0px 0px 15px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .gnomenu-menu-middle-pane {
@@ -51,150 +34,141 @@
 }
 
 .gnomenu-user-group-box {
-         border-image: url("b-panel.png") 12 12 12 12;
+     border-image: url("b-panel.png") 12 12 12 12;
 }
 
 .gnomenu-user-group-button {
-         padding: 9px 13px;
+    padding: 9px 12px;
+}
+
+.gnomenu-user-group-button:insensitive {
+    color: #9f9f9f;
 }
 
 .gnomenu-user-group-button-label {
     font-size: 14px;
 }
 
-.gnomenu-user-group-button:hover {
+.gnomenu-user-group-button:active {
 }
 
 .gnomenu-view-mode-box-wrapper {
 }
 
 .gnomenu-view-mode-box {
-         border-image: url("b-panel.png") 12 12 12 12;
+    border-image: url("b-panel.png") 12 12 12 12;
 }
 
 .gnomenu-view-mode-button {
-    padding: 5px 12px;
+    padding: 4px 14px;
 }
 
-.gnomenu-view-mode-button:hover {
+.gnomenu-view-mode-button:active {
 }
 
 .gnomenu-search-box {
 }
 
 .gnomenu-favorites-scrollbox {
-    border-image: url("sepa-left.png") 12 12 12 12;
-    padding: 8px ;
+    border-image: url("b-panel.png") 12 12 12 12;
+    padding: 3px;
 }
 
 .gnomenu-favorites-box {
+    padding: 3px;
 }
 
 .gnomenu-favorite-button {
-    padding: 5px 6px
+    padding: 6px 8px;
 }
 
-.gnomenu-favorite-button:hover {
+.gnomenu-favorite-button:active {
 }
 
-.gnomenu-category-places-power-group-box {
-}
-
-.gnomenu-category-places-workspace-wrapper {
-    /*border: 1px solid yellow;*/
+.gnomenu-categories-workspaces-wrapper {
     padding: 0px 0px 0px 0px;
 }
 
-.gnomenu-category-places-scrollbox {
+.gnomenu-categories-workspaces-scrollbox {
     border-image: url("sepa-right.png") 12 12 12 12;
-    height: 384px;
-    padding: 8px 0px;
+    height: 470px;
+    padding: 7px 3px 7px 0px;
 }
 
-.gnomenu-category-places-box {
-
+.gnomenu-workspaces-background {
+    padding: 3px 8px 3px 0px;
 }
 
 .gnomenu-categories-box {
-    width: 152px;
-    padding-left: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .gnomenu-category-button {
+    padding: 0px;
 }
 
 .gnomenu-category-button-label {
-    padding-left: 5px
+    font-size: 14px;
+    padding: 9px 10px 10px 10px;
 }
-.gnomenu-category-button:hover {
-    border-image: url("hover.png") 12 12 12 12;
-    color: rgba(255,255,255,0.9);
-}
-
+.gnomenu-category-button:active,
 .gnomenu-category-button-selected {
-    border-image: url("inset-panel-light.png") 12 12 12 12;
-    color: rgba(82,79,72,0.5);
-}
-
-.gnomenu-places-box {
 }
 
 .gnomenu-power-group-box {
-    border-image: url("b-panel-b.png") 12 12 12 12;
-    padding-bottom: 6px;
-    padding-top: 2px;
+    padding: 5px 0px 0px 0px;
 }
 
 .gnomenu-power-group-button {
-    padding: 5px 10px;
+    padding: 4px 11px;
 }
 
-.gnomenu-power-group-button:hover {
+.gnomenu-power-group-button:active {
 }
 
 .gnomenu-applications-scrollbox {
-    border-image: url("b-panel-r.png") 12 12 12 12;
-    padding-right: 1px;
-    width: 482px;
+    border-image: url("b-panel-b.png") 10 10;
+    padding: 0px 2px 4px 2px;
+    width: 600px;
 }
 
 .gnomenu-applications-box-wrapper {
-
 }
 
 .gnomenu-applications-list-box {
     padding-bottom: 0px;
-    padding-left: 24px;
+    padding-left: 52px;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: 7px;
 }
 
 .gnomenu-application-button {
-    padding: 0px 8px;
-    width: 428px;
+    padding: 0px 10px;
+    width: 512px;
 }
 
 .gnomenu-application-button-label {
-    padding: 10px 24px
+    padding: 9px 24px 10px 24px
 }
 
-.gnomenu-application-button:hover {
-}
-
+.gnomenu-application-button:active,
 .gnomenu-application-button-selected {
 }
 
 .gnomenu-applications-grid-box {
     padding-bottom: 0px;
-    padding-left: 4px;
+    padding-left: 2px;
     padding-right: 4px;
     padding-top: 0px;
 }
 
 .gnomenu-application-grid-button {
-    padding: 5px;
-    width: 82px;
-    height: 72px;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100px;
+    height: 82px;
 }
 
 .gnomenu-application-grid-button-label {
@@ -202,26 +176,26 @@
     width: 64px;
 }
 
-.gnomenu-application-grid-button:hover {
-}
-
+.gnomenu-application-grid-button:active,
 .gnomenu-application-grid-button-selected {
 }
 
 .gnomenu-selected-app-box {
-         border-image: url("sepa.png") 12 12 12 12;
-         padding: 6px 8px;
-         text-align: right;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    text-align: right;
+    max-width: 100px;
 }
 
 .gnomenu-selected-app-title {
-    height: 15px;
+    height: 20px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .gnomenu-selected-app-description {
-    height: 15px;
-    max-width: 150px;
-    font-size: 12px;
+    height: 20px;
+    /*max-width: 150px;*/
+    font-size: 14px;
 }

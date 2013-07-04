@@ -157,7 +157,7 @@ GtkAssistant .sidebar {
 .button {
 
     border-radius: 4px;
-    padding: 4px 6px;
+    padding: 3px 6px 4px 6px;
 
     color: mix (@fg_color, @bg_color, 0.1);
     text-shadow: none;
@@ -165,8 +165,8 @@ GtkAssistant .sidebar {
     -GtkWidget-focus-line-width: 0;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 1.02)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .button:backdrop {
@@ -181,8 +181,8 @@ GtkAssistant .sidebar {
 .button:hover {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.02)),
-                                                to (shade (@bg_color, 1.08)));
+                                            from (shade (@base_color, 1.0)),
+                                                to (shade (@base_color, 1.04)));
 }
 
 .button:hover:backdrop {
@@ -193,15 +193,15 @@ GtkAssistant .sidebar {
 .button:focus {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 1.02)));
+                                            from (shade (@base_color, 1.0)),
+                                                to (shade (@base_color, 1.04)));
 }
 
 .button:hover:focus {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.02)),
-                                                to (shade (@bg_color, 1.08)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .button:insensitive {
@@ -245,8 +245,8 @@ GtkAssistant .sidebar {
     text-shadow: none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 1.02)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .button:active:hover:backdrop {
@@ -259,7 +259,7 @@ GtkAssistant .sidebar {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
                                             from (shade (@button_bg_color,  1.0)),
-                                                to (shade (@button_bg_color, 0.95)));
+                                                to (shade (@button_bg_color, 1.04)));
 }
 
 .button:active:hover:focus {
@@ -286,12 +286,12 @@ GtkAssistant .sidebar {
 
 .button.default {
 
-    color: @selected_fg_color;
+    color: @fg_color;
     text-shadow: none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@selected_bg_color, 1.08)),
-                                                to (shade (@selected_bg_color, 1.02)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .button.default :backdrop {
@@ -309,8 +309,8 @@ GtkAssistant .sidebar {
     text-shadow: none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@selected_bg_color, 1.02)),
-                                                to (shade (@selected_bg_color, 1.08)));
+                                            from (shade (@selected_bg_color, 1.04)),
+                                                to (shade (@selected_bg_color, 1.0)));
 }
 
 .button.default:active {
@@ -323,14 +323,14 @@ GtkAssistant .sidebar {
                                                 to (shade (@selected_bg_color, 1.08)));
 }
 
-.button.default:active:hover {
+.button.default:hover:active {
 
-    color: @selected_fg_color;
-    text-shadow: none;
+    color: @fg_color;
+    text-shadow:  none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@selected_bg_color, 1.08)),
-                                                to (shade (@selected_bg_color, 1.02)));
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.04)));
 }
 
 .button.default:insensitive {
@@ -1215,10 +1215,12 @@ GtkLabel:insensitive {
  ********/
 
 .menu ,
+.toolbar .menu,
 GtkTreeMenu.menu,
-.toolbar .primary-toolbar .menu,
+GtkComboBox .menu,
 GtkMenuToolButton.menu,
-.primary-toolbar .button .menu {
+.primary-toolbar .button .menu,
+.toolbar .primary-toolbar .menu {
 
     border-radius: 0;
     color: @fg_color;
@@ -1231,12 +1233,24 @@ GtkMenuToolButton.menu,
                                                  to (shade (@menu_bg_color, 0.97)));
 }
 
+.primary-toolbar .button .menu {
+
+    color: @fg_color;
+    text-shadow: none;
+
+    padding: 1px 0px 0px 0px;
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                            from (shade (@menu_bg_color, 1.0)),
+                                                 to (shade (@menu_bg_color, 0.97)));
+}
+
 .primary-toolbar .button .menu .menuitem,
 .primary-toolbar .button .menu .menuitem * {
 
     color: @fg_color;
     text-shadow: none;
-    padding: 2px;
+    padding: 1px;
 }
 
 GtkTreeMenu.menu .menuitem:hover,
@@ -1250,19 +1264,6 @@ GtkMenuToolButton.menu .menuitem *:hover,
 
     color: @selected_fg_color;
     text-shadow: none;
-}
-
-.toolbar .menu,
-GtkComboBox .menu {
-
-    color: @fg_color;
-    text-shadow: none;
-
-    padding: 0px;
-
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@menu_bg_color, 1.0)),
-                                                 to (shade (@menu_bg_color, 0.97)));
 }
 
 .menu:selected {
@@ -1297,7 +1298,7 @@ GtkComboBox .menu {
     color: @selected_fg_color;
     text-shadow: none;
 
-    padding: 0px 8px;
+    padding: 0px 4px;
 }
 
 .menubar:backdrop {
@@ -1311,8 +1312,8 @@ GtkComboBox .menu {
 
 .menubar .menuitem {
 
-    border-width: 1px 1px 1px 1px;
-    padding: 3px 4px 4px 4px;
+    border-width: 1px;
+    padding: 3px 7px 4px 7px;
 }
 
 .menubar.menuitem:hover,
@@ -1344,7 +1345,6 @@ GtkComboBox .menuitem * {
 
     color: @fg_color;
     text-shadow: none;
-    padding: 2px;
 }
 
 GtkComboBox .menuitem *:hover {
@@ -2237,7 +2237,7 @@ GtkTextView {
     border-width: 0px;
     color: mix (@fg_color, @bg_color, 0.1);
     text-shadow: none;
-    padding: 5px;
+    padding: 3px 2px 2px 2px;
    -GtkWidget-window-dragging: true;
 }
 
@@ -2249,16 +2249,18 @@ GtkTextView {
 
 .toolbar .button {
 
+    padding: 2px 6px;
+
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.95)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .toolbar .button:hover {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 0.9)),
-                                                to (shade (@bg_color, 1.1)));
+                                            from (shade (@base_color, 1.0)),
+                                                to (shade (@base_color, 1.04)));
 }
 
 .toolbar .button:active {
@@ -2267,15 +2269,15 @@ GtkTextView {
     text-shadow: none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.02)),
-                                                to (shade (@bg_color, 1.08)));
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.04)));
 }
 
 .toolbar .button:active:hover {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.95)));
+                                            from (shade (@bg_color, 1.04)),
+                                                to (shade (@bg_color, 1.0)));
 }
 
 .toolbar .button:active:hover:backdrop {
@@ -2284,15 +2286,15 @@ GtkTextView {
     text-shadow: none;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 0.9)),
-                                                to (shade (@bg_color, 1.1)));
+                                            from (shade (@bg_color, 1.04)),
+                                                to (shade (@bg_color, 1.0)));
 }
 
 .toolbar .button:active:hover:focus {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.02)),
-                                                to (shade (@bg_color, 1.08)));
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.04))); 
 }
 
 .toolbar .button:backdrop {
@@ -2317,8 +2319,8 @@ GtkTextView {
 .toolbar .button:insensitive {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.95)));
+                                            from (shade (@base_color, 1.04)),
+                                                to (shade (@base_color, 1.0)));
 }
 
 .toolbar .button:insensitive:backdrop {
@@ -2338,7 +2340,7 @@ GtkTextView {
 
     color: @selected_fg_color;
     text-shadow: none;
-    padding: 3px;
+    padding: 3px 2px 2px 2px;
 
     -GtkWidget-window-dragging: true;
 }
@@ -2357,24 +2359,15 @@ GtkTextView {
     text-shadow: none;
 }
 
-.primary-toolbar GtkComboBox,
 .primary-toolbar .button *,
-.primary-toolbar .button {
+.primary-toolbar .button,
+.primary-toolbar GtkComboBox {
 
     background-color: @transparent;
     background-image: none;
     border-color: @transparent;
-    border-radius: 4px;
-    border-width: 1px;
-    padding: 2px 3px;
 
     color: @selected_fg_color;
-    text-shadow: none;
-}
-
-.primary-toolbar GtkComboBox {
-
-    color: @fg_color;
     text-shadow: none;
 }
 
@@ -2400,8 +2393,8 @@ GtkTextView {
 .primary-toolbar .button:hover {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.9)));
+                                            from (shade (@base_color, 1.0)),
+                                                to (shade (@base_color, 1.04)));
  }
 
 .primary-toolbar .button:active,
@@ -2414,8 +2407,8 @@ GtkTextView {
 .primary-toolbar .button:active {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.02)),
-                                                to (shade (@bg_color, 1.08)));
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.04)));
  }
 
 .primary-toolbar .button:active:hover,
@@ -2427,15 +2420,15 @@ GtkTextView {
 .primary-toolbar .button:active:hover {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.9)));
+                                            from (shade (@bg_color, 1.0)),
+                                                to (shade (@bg_color, 1.04)));
    }
 
 .primary-toolbar .button:active:hover:focus {
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@bg_color, 1.1)),
-                                                to (shade (@bg_color, 0.9)));
+                                            from (shade (@bg_color, 1.04)),
+                                                to (shade (@bg_color, 1.0)));
  }
 
 .primary-toolbar .button *:focus,
@@ -2492,12 +2485,12 @@ GtkTextView {
 /* inline-toolbar */
 .inline-toolbar.toolbar {
 
-    padding: 3px 6px 3px 6px;
+    padding: 2px;
     -GtkToolbar-button-relief: normal;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@base_color, 0.95)),
-                                                 to (shade (@base_color, 1.0)));
+                                            from (shade (@selected_bg_color, 1.0)),
+                                                to (shade (@selected_bg_color, 1.04)));
 }
 
 .inline-toolbar.toolbar .button {
@@ -2513,12 +2506,12 @@ GtkTextView {
  ***********/
 .tooltip {
 
-    border-radius: 5px;
+    border-radius: 1px;
     color: @tooltip_fg_color;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                            from (shade (@tooltip_bg_color, 1.0)),
-                                                to (shade (@tooltip_bg_color, 1.08)));
+                                            from (shade (@tooltip_bg_color, 1.08)),
+                                                to (shade (@tooltip_bg_color, 1.0)));
 }
 
 .tooltip * {

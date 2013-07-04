@@ -7,9 +7,6 @@
 @import url("extensions/window-overlay/window-overlay.css");
 @import url("extensions/workspace-dock/workspaces-to-dock.css");
 
-/* for some reason this wont work. fixed by enabling #panelLeft border-image in this css. */
-/* @import url("extensions/applications-menu/applications-menu.css"); */ 
-
 /* Text Styles */
 
 /* default text style */
@@ -451,7 +448,7 @@ StScrollBar StButton#vhandle:active {
     border-image: url("t-panel.png") 12 12 12 12;
     font-size: 11pt;
     font-weight: normal;
-    height:38px;
+    height:36px;
     padding-bottom: 1px;
 }
 
@@ -521,7 +518,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #panelLeft { 
-    border-image: url("t-panel-b.png") 12 12 12 12;
+    /*border-image: url("t-panel-b.png") 12 12 12 12;*/
 }
 
 #panelCenter { 
@@ -537,11 +534,6 @@ StScrollBar StButton#vhandle:active {
     text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
     spinner-image: url("process-working.svg");
     spacing: 4px;
-    padding-right: 14px;
-}
-
-#appMenu StLabel {
-    padding-left: 24px;
 }
 
 /* used for the app menu header only */
@@ -1272,6 +1264,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-week-number {
+    background-color: #5BB0CC;
     color: rgba(255,255,255,1.0);
 }
 
@@ -1297,7 +1290,8 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-today {
-    border-image: url("hover.png") 12 12 12 12;
+    border-image: url("cal-da.png") 12 12 12 12;
+    color: rgba(255,255,255,1.0);
     font-weight: bold;
 }
 
@@ -1823,7 +1817,6 @@ StScrollBar StButton#vhandle:active {
 }
 
 .modal-dialog-button:focus {
-    border-image: url("hover.png") 12 12 12 12;
 }
 
 /* Run Dialog */
